@@ -13,7 +13,7 @@ if(beginNum<2 || beginNum >100)
 
 {
 
-document.getElementById("invalid").innerHTML = "Number 1 is an Invalid Number";
+document.getElementById("invalid").innerHTML = "Number 1 " + " is an Invalid Number";
 
 }
 
@@ -21,7 +21,7 @@ if(endNum<2 || endNum>100)
 
 {
 
-document.getElementById("invalid").innerHTML = "Number 2 is an Invalid Number";
+document.getElementById("invalid").innerHTML = "Number 2 " + endNum + " is an Invalid Number";
 
 }
 
@@ -63,9 +63,9 @@ document.getElementById('output_content').innerHTML = "There were no prime numbe
 
 //else print prime number count and prime numbers in the range
 
-var count="<h2>Even Numbers Count:</h2>";
+var count="<h3>Even Numbers Count:</h3>";
 
-var html = "<h2>Even Numbers</h2>";
+var html = "<h3>Even Numbers</h3>";
 
 for(i=0;i<primeNumbs.length;i++)
 

@@ -4,8 +4,16 @@ h2{
   background-color: teal;
   color: white;
 }
+
+h3{
+color: green;
+background: beige;
+
+
+}
 body{
   text-align: center;
+  
 }
 .text{
   color: red;
@@ -18,5 +26,6 @@ body{
 }
 
 .text-success{
-  color: red;
+  color: teal;
 }
+

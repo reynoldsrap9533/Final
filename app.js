@@ -1,5 +1,5 @@
 
-function calcPrimeNumber()
+function calcEvenNumber()
 
 {
 
@@ -27,7 +27,7 @@ document.getElementById("invalid").innerHTML = "Number 2 is an Invalid Number";
 
 //array to hold prime numbers
 
-var primeNumbs = new Array();
+var EvenNumbs = new Array();
 
 var ctr = beginNum;
 
@@ -37,11 +37,11 @@ while(ctr<=endNum)
 
 {
 
-if(isPrime(ctr)==true)
+if(isEven(ctr)==true)
 
 {
 
-primeNumbs[primeNumbs.length] = ctr;
+EvenNumbs[EvenNumbs.length] = ctr;
 
 }
 
@@ -51,11 +51,11 @@ ctr = ctr+1;
 
 //if no length is zero, then no prime numbers
 
-if (primeNumbs.length == 0)
+if (EvenNumbs.length == 0)
 
 {
 
-document.getElementById('output_content').innerHTML = "There were no prime numbers within the range.";
+document.getElementById('output_content').innerHTML = "There were no Even numbers within the range.";
 
 }else
 
@@ -63,19 +63,19 @@ document.getElementById('output_content').innerHTML = "There were no prime numbe
 
 //else print prime number count and prime numbers in the range
 
-var count="<h2>Prime Numbers Count:</h2>";
+var count="<h2>Even Numbers Count:</h2>";
 
-var html = "<h2>Prime Numbers</h2>";
+var html = "<h2>Even Numbers</h2>";
 
-for(i=0;i<primeNumbs.length;i++)
+for(i=0;i<evenNumbs.length;i++)
 
 {
 
-html += primeNumbs[i] + ", ";
+html += evenNumbs[i] + ", ";
 
 }
 
-document.getElementById('prime_count').innerHTML = count+"<b>"+primeNumbs.length+"</b>";
+document.getElementById('even_count').innerHTML = count+"<b>"+evenNumbs.length+"</b>";
 
 document.getElementById('output_content').innerHTML ="<b>"+html+"</b>";
 
@@ -83,9 +83,9 @@ document.getElementById('output_content').innerHTML ="<b>"+html+"</b>";
 
 }
 
-//function to check the whether the number is primer or not
+//function to check the whether the number is even or not
 
-function isPrime(num)
+function isEven(num)
 
 {
 

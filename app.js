@@ -63,9 +63,9 @@ document.getElementById('output_content').innerHTML = "There were no prime numbe
 
 //else print prime number count and prime numbers in the range
 
-var count="<h2>Prime Numbers Count:</h2>";
+var count="<h2>Even Numbers Count:</h2>";
 
-var html = "<h2>Prime Numbers</h2>";
+var html = "<h2>Even Numbers</h2>";
 
 for(i=0;i<primeNumbs.length;i++)
 
@@ -91,13 +91,14 @@ function isPrime(num)
 
 var flag = true;
 
-//loop to check prime number or not
 
-for(var i=2; i<=Math.ceil(num/2); i++)
+
+
+for(var i=0; i<=Math.ceil(num/2 ); i++)
 
 {
 
-if((num%i)==0)
+if((num%2)!=0)
 
 {
 
